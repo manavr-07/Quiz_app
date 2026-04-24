@@ -8,21 +8,11 @@ A standalone Java 17 application that interacts with a quiz API, removes duplica
 
 ---
 
-## 📋 Table of Contents
-- [Overview](#overview)
-- [Processing Pipeline](#processing-pipeline)
-- [Data Structures](#data-structures)
-- [Project Structure](#project-structure)
-- [Key Features](#key-features)
-- [Requirements](#requirements)
-- [Setup & Execution](#setup--execution)
-- [Example Output](#example-output)
-- [Validation Checklist](#validation-checklist)
-- [Contribution](#contribution)
+
 
 ---
 
-## 🎯 Overview
+## Overview
 
 The application follows a structured pipeline to process quiz data efficiently:
 
@@ -34,7 +24,7 @@ This ensures data accuracy and prevents duplicate score inflation while maintain
 
 ---
 
-## 🔄 Processing Pipeline
+## Processing Pipeline
 
 ### 1. Polling
 
@@ -105,7 +95,7 @@ POST /quiz/submit
 
 ---
 
-## 🗂️ Data Structures
+## Data Structures
 
 | Structure | Purpose | Time Complexity |
 |-----------|---------|-----------------|
@@ -133,7 +123,7 @@ quiz-leaderboard/
 
 ---
 
-## ✨ Key Features
+## Key Features
 
 ✅ **No external dependencies** — pure Java 17  
 ✅ **Built-in retry mechanism** with exponential backoff  
@@ -144,14 +134,14 @@ quiz-leaderboard/
 
 ---
 
-## 📦 Requirements
+## Requirements
 
 - **Java 17** or higher
 - **No additional libraries** required
 
 ---
 
-## 🚀 Setup & Execution
+## Setup & Execution
 
 ### Clone Repository
 
@@ -188,7 +178,7 @@ java -jar target/quiz-leaderboard-1.0.jar YOUR_REG_NO
 
 ---
 
-## 📊 Example Output
+## Example Output
 
 ```
 === Quiz Leaderboard Aggregator ===
@@ -211,7 +201,7 @@ Scores: {Alice=120, Bob=95}
 
 ---
 
-## ✔️ Validation Checklist
+## Validation Checklist
 
 - [ ] 10 API calls executed (poll 0–9)
 - [ ] 5-second delay maintained between calls
@@ -224,7 +214,7 @@ Scores: {Alice=120, Bob=95}
 
 ---
 
-## 🤝 Contribution
+## Contribution
 
 We welcome contributions! Follow these steps:
 
@@ -236,5 +226,4 @@ We welcome contributions! Follow these steps:
 
 ---
 
-**Last Updated:** 2026-04-24 14:08:04  
 **Maintainer:** [manavr-07](https://github.com/manavr-07)
