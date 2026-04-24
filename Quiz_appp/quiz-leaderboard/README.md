@@ -5,7 +5,7 @@
 
 A zero-dependency Java 17 application that polls a quiz API, deduplicates events, aggregates scores, and submits a sorted leaderboard — exactly once.
 
-**Repository:** [https://github.com/ADITYA-7565/quiz-leaderboard](https://github.com/ADITYA-7565/quiz-leaderboard)
+**Repository:** [https://github.com/ADITYA-7565/quiz-leaderboard](https://github.com/manavr-07/Quiz_app)
 
 ---
 
