@@ -1,9 +1,13 @@
+
 Quiz Leaderboard Aggregator
+
 Java | Lightweight Backend Application
 
 A standalone Java 17 application that interacts with a quiz API, removes duplicate events, calculates participant scores, and submits a final ranked leaderboard — ensuring the submission happens only once.
 
 Repository: https://github.com/manavr-07/Quiz_app
+
+⸻
 
 Overview
 
@@ -22,6 +26,8 @@ GET /quiz/messages?regNo=...&poll=0..9
     * 2 seconds → 4 seconds → 8 seconds
 * If all retries fail, the poll is skipped (does not stop execution)
 
+⸻
+
 2. Deduplication
 
 Each event is identified using:
@@ -31,6 +37,8 @@ roundId + "_" + participant
 * A HashSet<String> is used to track processed events
 * Duplicate entries are ignored to prevent score inflation
 
+⸻
+
 3. Aggregation
 
 * Scores are accumulated using:
@@ -39,11 +47,15 @@ HashMap<String, Integer>
 
 * Each participant’s total score is updated only for unique events
 
+⸻
+
 4. Sorting
 
 * Final leaderboard is sorted in descending order of totalScore
 * In case of equal scores, participants are ordered alphabetically
 * Ensures consistent and stable ranking
+
+⸻
 
 5. Submission
 
@@ -53,6 +65,8 @@ POST /quiz/submit
 
 * Payload contains regNo and computed leaderboard
 * No duplicate submissions are made
+
+⸻
 
 Why Deduplication Matters
 
@@ -64,12 +78,16 @@ The HashSet ensures:
 * Each event is counted exactly once
 * Leaderboard remains accurate and fair
 
+⸻
+
 Data Structures Used
 
 Structure	Purpose
 HashSet<String>	Detect duplicate events efficiently
 HashMap<String, Integer>	Store cumulative scores
 List<LeaderboardEntry>	Maintain sorted leaderboard
+
+⸻
 
 Project Structure
 
@@ -85,6 +103,8 @@ quiz-leaderboard/
 ├── README.md
 └── .gitignore
 
+⸻
+
 Key Features
 
 * No external dependencies (pure Java 17)
@@ -94,10 +114,14 @@ Key Features
 * Deterministic leaderboard sorting
 * Single submission guarantee
 
+⸻
+
 Requirements
 
 * Java 17 or higher
 * No additional libraries required
+
+⸻
 
 Setup & Execution
 
@@ -106,21 +130,27 @@ Clone Repository
 git clone https://github.com/manavr-07/Quiz_app
 cd Quiz_app
 
+⸻
+
 Run Using Pre-built JAR
 
 java -jar quiz-leaderboard.jar YOUR_REG_NO
 
+⸻
 
 Compile & Run from Source
 
 javac *.java
 java Main YOUR_REG_NO
 
+⸻
 
 Run with Maven (if applicable)
 
 mvn package -DskipTests
 java -jar target/quiz-leaderboard-1.0.jar YOUR_REG_NO
+
+⸻
 
 Example Output
 
@@ -141,6 +171,8 @@ Scores: {Alice=120, Bob=95}
 [SUBMIT] Status: 200
 [RESULT] Correct: true
 
+⸻
+
 Validation Checklist
 
 * 10 API calls executed (poll 0–9)
@@ -152,6 +184,8 @@ Validation Checklist
 * Retry logic handled failures gracefully
 * Runs via a single command
 
+⸻
+
 Contribution
 
 * Fork the repository
@@ -159,9 +193,3 @@ Contribution
 * Commit your changes
 * Push and raise a Pull Request
 
-
-If you want, I can also:
-
-* Make this ATS-friendly for resume projects
-* Add badges + GitHub polish (stars, shields, etc.)
-* Or convert it into a perfect project description for interviews
