@@ -125,12 +125,12 @@ quiz-leaderboard/
 
 ## Key Features
 
-✅ **No external dependencies** — pure Java 17  
-✅ **Built-in retry mechanism** with exponential backoff  
-✅ **Efficient duplicate handling** across polls  
-✅ **Accurate score computation** with deduplication  
-✅ **Deterministic leaderboard sorting** for consistency  
-✅ **Single submission guarantee** — no duplicates  
+**No external dependencies** — pure Java 17  
+**Built-in retry mechanism** with exponential backoff  
+**Efficient duplicate handling** across polls  
+**Accurate score computation** with deduplication  
+**Deterministic leaderboard sorting** for consistency  
+**Single submission guarantee** — no duplicates  
 
 ---
 
